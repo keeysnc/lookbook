@@ -1,0 +1,13 @@
+{# cover.html #}
+
+{% set image = './image/ryu-cover.jpg' %}
+
+<div class="page-transition"></div>
+<div id="cover" class="section row" data-anchor="slide1">
+        <div class="photo-container col-lg-12 col-md-12 col-sm-12" style="background: url({{ image }}); background-size:cover; background-position: top center;">
+               
+                {% include "../fragments/cover-content-box.html" %}
+                {% include "../fragments/position-prompt.html" %}
+                
+        </div>
+        </div>

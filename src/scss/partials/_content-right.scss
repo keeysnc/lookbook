@@ -1,0 +1,156 @@
+#content-right-layout{
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    .section{
+        height: 100vh; 
+        overflow: hidden; 
+    }
+    
+    .content-box{
+        display: flex;
+        height: 100%;
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: $content-box-padding;
+    
+        .description{
+            padding-top: 20px;
+            width: 80%;
+        }
+    }
+    
+    .category{
+        order: 1;
+        text-transform: uppercase;
+        font-size: .8em;
+
+        span{
+            display: inline-block;
+            padding-left: 20px;
+            position: relative;
+            top: -20px;
+            font-size: 1.2em;
+        }
+
+        span:after{
+            position: absolute;
+            content: " ";
+            z-index: 99;
+            top: -12px;
+            left: 11px;
+            background: $ryu-grey;
+            width: 2px;
+            height: 40px;
+        }
+    }
+    
+    .collection-info{
+        order: 2;
+    
+        .title{
+            font-size: $clothing-title;
+            color: $highlight;
+            padding: $title-padding;
+            width: 80%;
+        }
+        .description{
+            line-height: 1.5em;
+            font-size: .8em;
+            color: $ryu-grey;
+            padding: $desc-padding;
+        }
+
+        svg{
+            margin-right: 15px;
+            fill: $ryu-blue;
+        }
+    }
+    
+    .cta{
+        order: 3;
+        padding: $cta-padding;
+        border: 2px $ryu-grey solid;
+        text-transform: uppercase;
+    
+        a{
+            color: $ryu-grey;
+            font-size: .8em;
+        }
+    }
+    
+    
+    .photo-container{
+        height: 100%;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .photo-half{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        object-position: center top;
+        z-index: 1;
+    }
+    
+    .side-pagination{
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        z-index: 99;
+        font-size: 1.5em;
+        font-style: italic;
+    } 
+
+     // media query
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+        .content-box{
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            height: 100%;
+            flex-direction: column; 
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding:$content-box-padding;
+            background: linear-gradient( to top, $transparent-white , rgba(0,0,0,0));
+            z-index: 99;
+            width: 100%
+        }
+
+        .photo-container{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .social-media{
+            padding-bottom: 20px;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+}

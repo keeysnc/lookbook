@@ -1,0 +1,24 @@
+{# content-left.html #}
+<!-- Content Left Layout-->                    
+{% set ryuLogo = 'image/ryu-logo-white.svg' %}
+{% set image = './image/slide-img-1.jpg' %}
+{% set title = 'Select and Customize Your Layout!' %}
+{% set description = '<p>Customization is key! Select from 5 layouts:<p>
+<ul>
+<li>Full Image</li>
+<li>Right Image</li>
+<li>Left Image</li>
+<li>Workout Plan</li>
+<li>Video</li>
+</ul> 
+ <p>The “Workout Plan” layout will allow you to upload featured workouts into your lookbook. 
+ You’ll want to workout after seeing the new looks RYU has in store!</p>' %}
+
+<div id="content-left-layout" class="section row" data-anchor="slide2">
+
+        {% include "../fragments/half-content-box.html" %}
+
+        <div class="photo-container col-lg-6 col-md-6 col-sm-12">
+            <img class="photo-half" src="{{ image }}">
+        </div>
+    </div>

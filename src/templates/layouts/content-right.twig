@@ -1,0 +1,18 @@
+{# content-right.html #}
+
+{% set image = './image/slide-img-5.jpg' %}
+{% set ryuLogo = 'image/ryu-logo.svg' %}
+{% set title = 'View, Share, Shop' %}
+{% set description = 
+'
+<ul>
+<li>Add Facebook and Pinterest share links to your layouts</li>
+<li>"Shop Now” call to action button below so users can purchase clothes from the collection</li>
+</u>' %}
+<!-- Content Right Layout-->
+<div id="content-right-layout" class="section row" data-anchor="slide3">
+        <div class="photo-container col-lg-6 col-md-6 col-sm-12">
+                <img class="photo-half" src="{{ image }}">
+        </div>
+         {% include "../fragments/half-content-box.html" %}
+    </div>

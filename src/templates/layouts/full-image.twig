@@ -1,0 +1,13 @@
+{# full-image.html #}
+<!-- Full Image Layout-->
+
+{% set image = './image/Cassie-1.jpg' %}
+{% set title = 'Seemless Wordpress Integration' %}
+{% set description = 'This lookbook is created to integrate seemlessly into RYU\'s Wordpress site. Once the theme is set up, templating technology will be utilized so content editors can easily add lookbook content ( no coding required ).' %}
+
+<div id="full-image-layout" class="section row" data-anchor="slide5">
+<div class="photo-container col-lg-12 col-md-12 col-sm-12">
+        <img class="photo-full" src="{{ image }}">
+        {% include "../fragments/full-content-box.html" %}
+</div>
+</div>  
